@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield IDS - Real-Time Monitoring</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="matrix-bg"></div>
+    
+    <header>
+        <div class="container">
+            <h1 class="glitch" data-text="CYBERSHIELD IDS">CYBERSHIELD IDS</h1>
+            <p class="subtitle">Advanced Intrusion Detection System</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- System Status -->
+        <section class="status-panel">
+            <div class="status-card" id="systemStatus">
+                <div class="status-icon">🛡️</div>
+                <div class="status-info">
+                    <h3>System Status</h3>
+                    <p class="status-text">MONITORING</p>
+                </div>
+            </div>
+            <div class="status-card">
+                <div class="status-icon">📊</div>
+                <div class="status-info">
+                    <h3>Total Traffic</h3>
+                    <p class="status-value" id="totalTraffic">0</p>
+                </div>
+            </div>
+            <div class="status-card">
+                <div class="status-icon">⚠️</div>
+                <div class="status-info">
+                    <h3>Threats Detected</h3>
+                    <p class="status-value threat" id="threatsDetected">0</p>
+                </div>
+            </div>
+            <div class="status-card">
+                <div class="status-icon">🚫</div>
+                <div class="status-info">
+                    <h3>IPs Blocked</h3>
+                    <p class="status-value" id="ipsBlocked">0</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Charts -->
+        <section class="charts-grid">
+            <div class="chart-panel">
+                <h3>CPU Usage Comparison</h3>
+                <canvas id="cpuChart"></canvas>
+            </div>
+            <div class="chart-panel">
+                <h3>Memory Usage Comparison</h3>
+                <canvas id="memoryChart"></canvas>
+            </div>
+            <div class="chart-panel">
+                <h3>Network Activity</h3>
+                <canvas id="networkChart"></canvas>
+            </div>
+            <div class="chart-panel">
+                <h3>Threat Distribution</h3>
+                <canvas id="threatChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Traffic Logs -->
+        <section class="logs-panel">
+            <div class="panel-header">
+                <h3>🔍 Live Traffic Monitor</h3>
+                <div class="header-actions">
+                    <a href="/database" class="btn-generate" style="text-decoration: none; margin-right: 10px; background: rgba(0, 212, 255, 0.2); color: var(--neon-blue); border-color: var(--neon-blue);">🗄️ View Database</a>
+                    <button class="btn-generate" onclick="generateReport()">📄 Generate Report</button>
+                    <button class="btn-reset" onclick="resetSystem()">🔄 Reset</button>
+                </div>
+            </div>
+            <div class="logs-container" id="logsContainer">
+                <p class="log-entry">Initializing traffic monitor...</p>
+            </div>
+        </section>
+
+        <!-- Blocked IPs -->
+        <section class="blocked-ips-panel">
+            <h3>🚫 Blocked IP Addresses</h3>
+            <div class="blocked-ips-grid" id="blockedIpsList">
+                <p>No IPs blocked yet</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

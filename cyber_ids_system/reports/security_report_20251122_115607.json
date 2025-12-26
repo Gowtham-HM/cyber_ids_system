@@ -1,0 +1,199 @@
+{
+  "generated_at": "2025-11-22T11:56:07.159943",
+  "summary": {
+    "total_packets_analyzed": 15,
+    "threats_detected": 15,
+    "ips_blocked": 15,
+    "system_status": "Under Attack"
+  },
+  "performance_impact": {
+    "avg_cpu_before": 0,
+    "avg_cpu_after": 79.52727272727273,
+    "avg_memory_before": 0,
+    "avg_memory_after": 82.09090909090911
+  },
+  "recent_threats": [
+    {
+      "timestamp": "2025-11-22T11:55:45.272162",
+      "src_ip": "192.168.84.27",
+      "dst_ip": "10.0.139.102",
+      "protocol": "udp",
+      "service": "ssh",
+      "prediction": "U2R",
+      "confidence": 0.88,
+      "threat_level": "High",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T11:55:46.574695",
+      "src_ip": "192.168.145.123",
+      "dst_ip": "10.0.54.86",
+      "protocol": "udp",
+      "service": "ssh",
+      "prediction": "U2R",
+      "confidence": 0.97,
+      "threat_level": "High",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T11:55:48.082963",
+      "src_ip": "192.168.79.63",
+      "dst_ip": "10.0.198.217",
+      "protocol": "udp",
+      "service": "ssh",
+      "prediction": "U2R",
+      "confidence": 0.89,
+      "threat_level": "High",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T11:55:49.581686",
+      "src_ip": "192.168.234.81",
+      "dst_ip": "10.0.243.161",
+      "protocol": "icmp",
+      "service": "telnet",
+      "prediction": "U2R",
+      "confidence": 0.84,
+      "threat_level": "High",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T11:55:51.092763",
+      "src_ip": "192.168.79.138",
+      "dst_ip": "10.0.68.149",
+      "protocol": "udp",
+      "service": "http",
+      "prediction": "U2R",
+      "confidence": 0.83,
+      "threat_level": "High",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T11:55:52.575244",
+      "src_ip": "192.168.62.80",
+      "dst_ip": "10.0.118.120",
+      "protocol": "icmp",
+      "service": "smtp",
+      "prediction": "U2R",
+      "confidence": 0.54,
+      "threat_level": "Medium",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T11:55:54.082652",
+      "src_ip": "192.168.227.195",
+      "dst_ip": "10.0.240.225",
+      "protocol": "tcp",
+      "service": "ssh",
+      "prediction": "U2R",
+      "confidence": 0.95,
+      "threat_level": "High",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T11:55:55.582144",
+      "src_ip": "192.168.21.195",
+      "dst_ip": "10.0.238.95",
+      "protocol": "tcp",
+      "service": "telnet",
+      "prediction": "U2R",
+      "confidence": 0.99,
+      "threat_level": "High",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T11:55:57.083680",
+      "src_ip": "192.168.134.221",
+      "dst_ip": "10.0.69.161",
+      "protocol": "icmp",
+      "service": "ftp",
+      "prediction": "U2R",
+      "confidence": 0.81,
+      "threat_level": "High",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T11:55:58.568564",
+      "src_ip": "192.168.184.180",
+      "dst_ip": "10.0.219.72",
+      "protocol": "icmp",
+      "service": "ssh",
+      "prediction": "U2R",
+      "confidence": 0.53,
+      "threat_level": "Medium",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T11:56:00.094070",
+      "src_ip": "192.168.70.216",
+      "dst_ip": "10.0.253.190",
+      "protocol": "icmp",
+      "service": "smtp",
+      "prediction": "U2R",
+      "confidence": 0.86,
+      "threat_level": "High",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T11:56:01.598008",
+      "src_ip": "192.168.119.36",
+      "dst_ip": "10.0.15.26",
+      "protocol": "icmp",
+      "service": "ftp",
+      "prediction": "U2R",
+      "confidence": 0.79,
+      "threat_level": "Medium",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T11:56:03.092630",
+      "src_ip": "192.168.68.162",
+      "dst_ip": "10.0.205.82",
+      "protocol": "tcp",
+      "service": "ftp",
+      "prediction": "U2R",
+      "confidence": 0.86,
+      "threat_level": "High",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T11:56:04.592219",
+      "src_ip": "192.168.140.87",
+      "dst_ip": "10.0.195.46",
+      "protocol": "tcp",
+      "service": "ssh",
+      "prediction": "U2R",
+      "confidence": 0.93,
+      "threat_level": "High",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T11:56:06.092937",
+      "src_ip": "192.168.13.11",
+      "dst_ip": "10.0.132.161",
+      "protocol": "icmp",
+      "service": "private",
+      "prediction": "U2R",
+      "confidence": 0.89,
+      "threat_level": "High",
+      "blocked": true
+    }
+  ],
+  "blocked_ips": [
+    "192.168.145.123",
+    "192.168.13.11",
+    "192.168.119.36",
+    "192.168.184.180",
+    "192.168.79.63",
+    "192.168.79.138",
+    "192.168.140.87",
+    "192.168.227.195",
+    "192.168.68.162",
+    "192.168.234.81",
+    "192.168.84.27",
+    "192.168.70.216",
+    "192.168.62.80",
+    "192.168.134.221",
+    "192.168.21.195"
+  ]
+}

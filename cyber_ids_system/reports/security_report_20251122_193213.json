@@ -1,0 +1,91 @@
+{
+  "generated_at": "2025-11-22T19:32:13.792882",
+  "summary": {
+    "total_packets_analyzed": 6,
+    "threats_detected": 6,
+    "ips_blocked": 6,
+    "system_status": "Under Attack"
+  },
+  "performance_impact": {
+    "avg_cpu_before": 0,
+    "avg_cpu_after": 97.73333333333335,
+    "avg_memory_before": 0,
+    "avg_memory_after": 75.41666666666666
+  },
+  "recent_threats": [
+    {
+      "timestamp": "2025-11-22T19:31:57.714821",
+      "src_ip": "192.168.155.200",
+      "dst_ip": "10.0.196.95",
+      "protocol": "icmp",
+      "service": "http",
+      "prediction": "U2R",
+      "confidence": 0.83,
+      "threat_level": "High",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T19:32:01.990261",
+      "src_ip": "192.168.179.14",
+      "dst_ip": "10.0.53.174",
+      "protocol": "icmp",
+      "service": "private",
+      "prediction": "U2R",
+      "confidence": 0.84,
+      "threat_level": "High",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T19:32:06.856675",
+      "src_ip": "192.168.213.192",
+      "dst_ip": "10.0.218.148",
+      "protocol": "udp",
+      "service": "ftp",
+      "prediction": "U2R",
+      "confidence": 0.83,
+      "threat_level": "High",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T19:32:09.819523",
+      "src_ip": "192.168.50.43",
+      "dst_ip": "10.0.18.192",
+      "protocol": "udp",
+      "service": "ssh",
+      "prediction": "U2R",
+      "confidence": 0.79,
+      "threat_level": "Medium",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T19:32:11.307447",
+      "src_ip": "192.168.14.172",
+      "dst_ip": "10.0.42.185",
+      "protocol": "icmp",
+      "service": "telnet",
+      "prediction": "U2R",
+      "confidence": 0.85,
+      "threat_level": "High",
+      "blocked": true
+    },
+    {
+      "timestamp": "2025-11-22T19:32:12.808015",
+      "src_ip": "192.168.80.211",
+      "dst_ip": "10.0.88.42",
+      "protocol": "icmp",
+      "service": "domain",
+      "prediction": "U2R",
+      "confidence": 0.58,
+      "threat_level": "Medium",
+      "blocked": true
+    }
+  ],
+  "blocked_ips": [
+    "192.168.50.43",
+    "192.168.155.200",
+    "192.168.80.211",
+    "192.168.213.192",
+    "192.168.179.14",
+    "192.168.14.172"
+  ]
+}
