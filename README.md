@@ -38,9 +38,25 @@ python app.py
 Open your web browser and go to:
 [http://localhost:5000](http://localhost:5000)
 
+### 4. Interactive SQL Shell
+Use the built-in SQL shell to query the database directly:
+
+```bash
+python sql_shell.py
+```
+
+**Common Commands:**
+- `tables`: List all database tables.
+- `SELECT * FROM traffic_logs LIMIT 10;`: View the 10 most recent traffic logs.
+- `SELECT * FROM blocked_ips;`: View all currently blocked IP addresses.
+- `SELECT prediction, COUNT(*) FROM traffic_logs GROUP BY prediction;`: Show threat distribution.
+- `exit`: Quit the shell.
+
 ## Project Structure
 
 - `app.py`: Main Flask application and dashboard logic.
+- `database.py`: Database connection and utility functions.
+- `sql_shell.py`: Interactive command-line SQL interface.
 - `train_model.py`: Script to train the Machine Learning model.
 - `models/`: Stores trained models (`fl_ids_model.pkl`, etc.).
 - `templates/` & `static/`: HTML and CSS/JS for the dashboard.
